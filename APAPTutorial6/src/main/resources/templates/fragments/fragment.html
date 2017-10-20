@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head th:fragment="header">
+		<title th:text="${title}">Fragment</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+	</head>
+	<body>
+		<div th:fragment="index">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/student/viewall">Daftar Mahasiswa</a></li>
+				<li><a href="/student/add">Menambah Mahasiswa</a></li>
+			</ul>
+		</div>
+		<div th:fragment="footer">
+			<hr/>
+			<h4>Mata Kuliah APAP</h4>
+		</div>
+	</body>
+</html>
